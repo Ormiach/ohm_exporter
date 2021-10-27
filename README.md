@@ -46,10 +46,10 @@ nssm remove ohm_exporter
 # Grafana
 Use the file "grafana_dashboard.json" to import a dashboard in your Grafana instance.
 
-![Alt text](https://github.com/Ormiach/ohm_exporter/images/grafana_cpu.png?raw=true "Grafana CPU")
-![Alt text](https://github.com/Ormiach/ohm_exporter/images/grafana_gpu.png?raw=true "Grafana GPU")
-![Alt text](https://github.com/Ormiach/ohm_exporter/images/grafana_mainboard.png?raw=true "Grafana Mainboard")
-![Alt text](https://github.com/Ormiach/ohm_exporter/images/grafana_disk.png?raw=true "Grafana Disk")
+![Alt text](https://github.com/Ormiach/ohm_exporter/blob/main/images/grafana_cpu.png?raw=true "Grafana CPU")
+![Alt text](https://github.com/Ormiach/ohm_exporter/blob/main/images/grafana_gpu.png?raw=true "Grafana GPU")
+![Alt text](https://github.com/Ormiach/ohm_exporter/blob/main/images/grafana_mainboard.png?raw=true "Grafana Mainboard")
+![Alt text](https://github.com/Ormiach/ohm_exporter/blob/main/images/grafana_disk.png?raw=true "Grafana Disk")
 
 # Compatibility
 
