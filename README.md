@@ -2,13 +2,15 @@
 * [General Info](#general-info)
 * [Setup](#setup)
 * [Usage](#usage)
+* [Grafana](#grafana)
+* [Compatibility](#compatibility)
 * [Improve Script](#imrpove-script)
 
 # General info
 "ohm_exporter" collects stats via "Open Hardware Monitor" and creates a prometheus readable metric file.
 
-# Setup
 
+# Setup
 
 ### Download ohm_exporter.exe
 Download ohm_exporter.exe from here: 
@@ -41,6 +43,25 @@ nssm install ohm_exporter ohm_exporter.exe
 nssm remove ohm_exporter
 ```
 
+# Grafana
+Use the file "grafana_dashboard.json" to import a dashboard in your Grafana instance.
+
+![Alt text](https://github.com/Ormiach/ohm_exporter/images/grafana_cpu.png?raw=true "Grafana CPU")
+![Alt text](https://github.com/Ormiach/ohm_exporter/images/grafana_gpu.png?raw=true "Grafana GPU")
+![Alt text](https://github.com/Ormiach/ohm_exporter/images/grafana_mainboard.png?raw=true "Grafana Mainboard")
+![Alt text](https://github.com/Ormiach/ohm_exporter/images/grafana_disk.png?raw=true "Grafana Disk")
+
+# Compatibility
+
+Tested with the following hardware. Other hardware may needs adaptation.
+
+* Processor
+	* AMD Ryzen 5 5600X
+	* AMD Ryzen 9 5900X
+* GPU
+	* NVIDIA GeForce RTX 3080
+	* AMD Radeon RX 6800 XT
+
 # Improve Script
 
 ### Build a new .exe
@@ -48,3 +69,4 @@ nssm remove ohm_exporter
 PS>Install-Module ps2exe
 PS>Invoke-ps2exe .\ohm_exporter.ps1 .\ohm_exporter.exe
 ```
+
